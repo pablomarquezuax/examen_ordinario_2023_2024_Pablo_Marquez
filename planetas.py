@@ -12,6 +12,11 @@ class Planeta:
         self.volumen = volumen
         self.clasificacion = clasificacion
 
+
+'''
+Creacion de una clase hija (herencia) para cada planeta dentro de la clase padre ClasificacionPlaneta
+Por eso se utilizan super inits.
+'''
 class PlanetaConcordia(Planeta):
     def __init__(self):
         super().__init__("Concordia", 500, ClasificacionPlaneta.CONCORDIA)
