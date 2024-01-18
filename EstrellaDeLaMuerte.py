@@ -1,5 +1,6 @@
 from planetas import ClasificacionPlaneta, PlanetaConcordia, PlanetaIlum, PlanetaKamino
 
+# Clase principal con las funciones para determinar si la estrella es capaz de eliminar o no
 class EstrellaDeLaMuerte:
     def __init__(self):
         self.puntos_vida = 1000
@@ -23,6 +24,8 @@ class EstrellaDeLaMuerte:
         else:
             print(f"No se puede destruir la nave aliada {nave.nombre}.")
 
+
+# Se corren todas las funciones para ver en que casos los planetas/naves serian eliminados segun los criterios de la clase anterior
 if __name__ == "__main__":
     from Naves import NavePequena, NaveGrande
 
